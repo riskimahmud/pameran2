@@ -24,7 +24,7 @@
     <section class="wrapper">
         <img src="assets/img/logo.png" alt="" class="logo pulse" id="logo">
 
-        <div class="menu1 hidden" data-toggle="tooltip" data-placement="top" title="Economic">
+        <div class="menu1 hidden">
             <img src="assets/img/economic.png" width="50" height="50">
         </div>
 
@@ -41,7 +41,7 @@
         </div>
 
         <div class="menu5 hidden">
-            DEMO
+            <img src="assets/img/cityscape.png" width="50" height="50">
         </div>
     </section>
 
@@ -77,28 +77,59 @@ $(document).ready(function(){
             $(".wrapper div").toggleClass("hidden pop");
         })
         
-        $(".menu1").on("click", function(e) {
+        $(".menu2").on("click", function(e) {
             $('#my-modal').modal({backdrop: 'static', keyboard: false})  
             let content = `
-                <h5>Pemerintahan</h5>
+                <img width='100%' src='content/1-03.jpg'>
             `;
-            $(".modal-title").html('PEMERINTAHAN');
+            $(".modal-title").html('PEMERINTAHAN/GOVERMENT');
             $(".modal-body").html(content);
             $("#my-modal").modal("show");
         })
-        $(".menu2").on("click", function(e) {
+        $(".menu1").on("click", function(e) {
             let content = `
-                <h5>Ekonomi</h5>
+                <img width='100%' src='content/1-17.jpg'>
+                <img width='100%' src='content/1-53.jpg'>
+                <img width='100%' src='content/1-54.jpg'>
+                <img width='100%' src='content/1-55.jpg'>
             `;
-            $(".modal-title").html('EKONOMI');
+            $(".modal-title").html('EKONOMI/ECONOMIC');
             $(".modal-body").html(content);
             $("#my-modal").modal("show");
         })
         $(".menu3").on("click", function(e) {
             let content = `
-                <h5>Pariwisata</h5>
+                <img width='100%' src='content/1-68.jpg'>
+                <img width='100%' src='content/1-69.jpg'>
+                <img width='100%' src='content/1-71.jpg'>
+                <img width='100%' src='content/1-72.jpg'>
+                <img width='100%' src='content/1-73.jpg'>
+                <img width='100%' src='content/1-75.jpg'>
             `;
-            $(".modal-title").html('PARIWISATA');
+            $(".modal-title").html('PARIWISATA/TOURISM');
+            $(".modal-body").html(content);
+            $("#my-modal").modal("show");
+        })
+
+        $(".menu5").on("click", function(e) {
+            let content = `
+                <img width='100%' src='content/1-11.jpg'>
+                <img width='100%' src='content/1-12.jpg'>
+                <img width='100%' src='content/1-13.jpg'>
+                <img width='100%' src='content/1-14.jpg'>
+                <img width='100%' src='content/1-15.jpg'>
+            `;
+            $(".modal-title").html('DAERAH/CITY');
+            $(".modal-body").html(content);
+            $("#my-modal").modal("show");
+        })
+
+        $(".menu4").on("click", function(e) {
+            let content = `
+                <img width='100%' src='content/1-79.jpg'>
+                <img width='100%' src='content/1-78.jpg'>
+            `;
+            $(".modal-title").html('BUDAYA/CULTURE');
             $(".modal-body").html(content);
             $("#my-modal").modal("show");
         })
