@@ -33,7 +33,7 @@ img.logo{
 .hidden{
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
+    transition: visibility 0s 1s, opacity 2s linear;
 }
 
 .pulse{
@@ -46,7 +46,7 @@ img.logo{
 .pop{
     animation-name: animate-pop;
     animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     transition: all 0.3s ease-in-out;
 }
 
@@ -54,15 +54,16 @@ img.logo{
     cursor: pointer;
     position: absolute;
     border-radius: 50%;
-    left: 500px;
+    left: 60%;
     top: 50px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
+    border: solid 2px wheat;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     /* transition: all 3s; */
 }
@@ -71,15 +72,16 @@ img.logo{
     cursor: pointer;
     position: absolute;
     border-radius: 50%;
-    right: 500px;
+    right: 60%;
     top: 50px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
+    border: solid 2px wheat;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     /* transition: all 3s; */
 }
@@ -88,15 +90,16 @@ img.logo{
     cursor: pointer;
     position: absolute;
     border-radius: 50%;
-    right: 350px;
+    right: 80%;
     top: 300px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
+    border: solid 2px wheat;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     /* transition: all 3s; */
 }
@@ -107,13 +110,14 @@ img.logo{
     border-radius: 50%;
     /* right: 200px; */
     bottom: 50px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
+    border: solid 2px wheat;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     /* transition: all 3s; */
 }
@@ -122,15 +126,17 @@ img.logo{
     cursor: pointer;
     position: absolute;
     border-radius: 50%;
-    left: 350px;
+    left: 80%;
     top: 300px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
+    color:wheat;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: transparent;
+    border: solid 2px wheat;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     /* transition: all 3s; */
 }
