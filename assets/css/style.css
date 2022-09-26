@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700;900&display=swap');
+
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    /* background-color: #bcbcbc; */
+    /* background-color: #000; */
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vmax;
+    height: 100vmin;
+    /* background-color: #000; */
+}
+
+img.logo{
+    cursor: pointer;
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 3s;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.pulse{
+    animation-name: pulse;
+    animation-duration: 5s;
+    transition: all 0.3s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.pop{
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-duration: 5s;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu1{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    left: 500px;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* transition: all 3s; */
+}
+
+.menu2{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    right: 500px;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* transition: all 3s; */
+}
+
+.menu3{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    right: 350px;
+    top: 300px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* transition: all 3s; */
+}
+
+.menu4{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    /* right: 200px; */
+    bottom: 50px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* transition: all 3s; */
+}
+
+.menu5{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    left: 350px;
+    top: 300px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /* transition: all 3s; */
+}
+
+.wrapper > div:hover {
+    transform: scale(1.2, 1.2);
+}
+
+@keyframes gantung { 
+    0% {
+        transform: rotate(0);
+        transform-origin: top center;
+    }
+    25% {
+        transform: rotate(-1deg);
+        transform-origin: top center;
+    }
+    75%{
+        transform: rotate(1deg);
+        transform-origin: top center;
+    }
+    100%{
+        transform: rotate(0);
+        transform-origin: top center;
+    }
+}
+
+@keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+       -webkit-transform: scale(1);
+       transform: scale(1);
+    }
+    75% {
+       -webkit-transform: scale(1.1);
+       transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+       transform: scale(1);
+    }
+}
+
+@keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vegas/vegas.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+    </style>
+
+    <title>PAMERAN 6 Oktober 2022</title>
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <img src="assets/img/logo-gorontalokota.png" alt="" class="logo pulse" id="logo">
+
+        <div class="menu1 hidden">
+            PEMERINTAH
+        </div>
+
+        <div class="menu2 hidden">
+            EKONOMI
+        </div>
+
+        <div class="menu3 hidden">
+            PARIWISATA
+        </div>
+
+        <div class="menu4 hidden">
+            DEMO
+        </div>
+
+        <div class="menu5 hidden">
+            DEMO
+        </div>
+    </section>
+
+    <div class="modal fade" id="my-modal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered" id="modal-full">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vegas/jquery.min.js"></script>
+    <script src="assets/vegas/vegas.min.js"></script>
+
+    <script>
+        $("#logo").on("click", function(e) {
+            $(this).toggleClass("pulse");
+            $(".wrapper div").toggleClass("hidden pop");
+        })
+    
+        $(".menu1").on("click", function(e) {
+            let content = `
+                <h5>Pemerintahan</h5>
+            `;
+            $(".modal-title").html('PEMERINTAHAN');
+            $(".modal-body").html(content);
+            $("#my-modal").modal("show");
+        })
+        $(".menu2").on("click", function(e) {
+            let content = `
+                <h5>Ekonomi</h5>
+            `;
+            $(".modal-title").html('EKONOMI');
+            $(".modal-body").html(content);
+            $("#my-modal").modal("show");
+        })
+        $(".menu3").on("click", function(e) {
+            let content = `
+                <h5>Pariwisata</h5>
+            `;
+            $(".modal-title").html('PARIWISATA');
+            $(".modal-body").html(content);
+            $("#my-modal").modal("show");
+        })
+
+        $("body").vegas({
+            delay: 7000,
+            timer: false,
+            shuffle: true,
+            color: '#000',
+            firstTransition: 'fade',
+            firstTransitionDuration: 5000,
+            transition: ['fade2', 'zoomOut2', 'slideDown2'],
+            transitionDuration: 5000,
+            animation: ['kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight'],
+            overlay: true,
+            slides: [
+                {
+                    src: "assets/img/slide2.jpg"
+                },
+                {
+                    src: "assets/img/slide1.jpg"
+                },
+                {
+                    src: "assets/img/slide3.jpg"
+                },
+            ]
+        });
+    </script>
+</body>
+
+</html>
