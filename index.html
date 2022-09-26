@@ -22,22 +22,22 @@
 <body>
 
     <section class="wrapper">
-        <img src="assets/img/logo-gorontalokota.png" alt="" class="logo pulse" id="logo">
+        <img src="assets/img/logo.png" alt="" class="logo pulse" id="logo">
 
-        <div class="menu1 hidden">
-            PEMERINTAH
+        <div class="menu1 hidden" data-toggle="tooltip" data-placement="top" title="Economic">
+            <img src="assets/img/economic.png" width="50" height="50">
         </div>
 
         <div class="menu2 hidden">
-            EKONOMI
+            <img src="assets/img/city-hall.png" width="50" height="50">
         </div>
 
         <div class="menu3 hidden">
-            PARIWISATA
+            <img src="assets/img/map.png" width="50" height="50">
         </div>
 
         <div class="menu4 hidden">
-            DEMO
+            <img src="assets/img/network.png" width="50" height="50">
         </div>
 
         <div class="menu5 hidden">
@@ -67,6 +67,11 @@
     <script src="assets/vegas/vegas.min.js"></script>
 
     <script>
+
+$(document).ready(function(){
+        $('.hidden').tooltip('show');  
+    });
+
         $("#logo").on("click", function(e) {
             $(this).toggleClass("pulse");
             $(".wrapper div").toggleClass("hidden pop");
@@ -111,13 +116,7 @@
             overlay: true,
             slides: [
                 {
-                    src: "assets/img/slide2.jpg"
-                },
-                {
                     src: "assets/img/slide1.jpg"
-                },
-                {
-                    src: "assets/img/slide3.jpg"
                 },
             ]
         });
