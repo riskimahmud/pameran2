@@ -71,8 +71,9 @@
             $(this).toggleClass("pulse");
             $(".wrapper div").toggleClass("hidden pop");
         })
-    
+        
         $(".menu1").on("click", function(e) {
+            $('#my-modal').modal({backdrop: 'static', keyboard: false})  
             let content = `
                 <h5>Pemerintahan</h5>
             `;
